@@ -31,7 +31,7 @@ jobs:
       run: npm run lint
 
     - name: Auditoria de Segurança
-      run: npm audit --audit-level=moderate
+      run: npm audit --audit-level=high
       
     - name: Executar testes
       run: npm test -- --run
