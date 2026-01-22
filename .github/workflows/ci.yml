@@ -29,6 +29,9 @@ jobs:
 
     - name: Executar lint
       run: npm run lint
+
+    - name: Auditoria de Segurança
+      run: npm audit --audit-level=moderate
       
     - name: Executar testes
       run: npm test -- --run
