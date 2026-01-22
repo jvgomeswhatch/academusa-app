@@ -4,15 +4,15 @@ import { describe, it, expect } from 'vitest'
 import App from './App'
 
 describe('App', () => {
-  it('deve renderizar o título Hello World', () => {
+  it('deve renderizar o título Salve, rapaziada!', () => {
     render(<App />)
-    const heading = screen.getByText(/Hello World!/i)
+    const heading = screen.getByText(/Salve, rapaziada!/i)
     expect(heading).toBeInTheDocument()
   })
 
   it('deve renderizar o parágrafo descritivo', () => {
     render(<App />)
-    const paragraph = screen.getByText(/Este é um App.tsx com Vite e React/i)
+    const paragraph = screen.getByText(/Teste de ambiente de CI\/CD/i)
     expect(paragraph).toBeInTheDocument()
   })
 })
